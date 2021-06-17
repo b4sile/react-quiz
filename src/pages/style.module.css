@@ -1,0 +1,132 @@
+.container {
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 65%;
+  }
+}
+@media (max-width: 850px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  line-height: 120%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.category {
+  font-size: 14px;
+}
+
+.difficulty {
+  font-size: 12px;
+  margin-left: 15px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.easy {
+  background-color: var(--green-color);
+}
+
+.medium {
+  background-color: var(--yellow-color);
+}
+
+.hard {
+  background-color: var(--red-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  justify-self: start;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+}
+
+.label:hover {
+  opacity: 0.6;
+}
+
+.input {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.input:checked + .label {
+  background-color: whitesmoke;
+  border: 1px solid grey;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.res_item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.res_item:nth-child(1) .line {
+  background-color: var(--all-color);
+}
+
+.res_item:nth-child(2) .line {
+  background-color: var(--green-color);
+}
+
+.res_item:nth-child(3) .line {
+  background-color: var(--yellow-color);
+}
+
+.res_item:nth-child(4) .line {
+  background-color: var(--red-color);
+}
+
+.res_text {
+  margin-bottom: 7px;
+}
+
+.line {
+  height: 100%;
+}
+
+.bg_line {
+  height: 10px;
+  background-color: whitesmoke;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
+}
