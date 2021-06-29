@@ -17,10 +17,10 @@ export const api = {
       });
 
       return data.results.map((res) => {
-        let correct_answers: string[];
-        if (typeof res.correct_answer === 'string')
-          correct_answers = [res.correct_answer];
-        else correct_answers = res.correct_answer;
+        if (typeof res.correct_answer === 'string') {
+          res.correct_answer = [res.correct_answer];
+        }
+        const correct_answers = res.correct_answer;
         return {
           ...res,
           variants: shuffle<string>([
