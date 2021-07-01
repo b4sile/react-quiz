@@ -4,7 +4,7 @@ import { RootState } from '..';
 import { fetchQuestions } from '../thunks/gameThunks';
 import { compareArrays } from '../../utils';
 
-interface GameState {
+export interface GameState {
   questions: IQuestion[];
   error: string | undefined;
   isLoading: boolean;
@@ -14,7 +14,7 @@ interface GameState {
   results: null | IResults;
 }
 
-const initialState: GameState = {
+export const initialState: GameState = {
   questions: [],
   error: undefined,
   isLoading: false,

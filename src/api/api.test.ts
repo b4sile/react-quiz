@@ -38,7 +38,6 @@ describe('testing api', () => {
     );
     const data = await api.getQuestions();
     expect(fetchMock.mock.calls.length).toBe(1);
-
     expect(data).toBeNull();
   });
 
